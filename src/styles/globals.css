@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-dark text-gray-100;
+}
+
+.c-scrollbar_thumb {
+  @apply !bg-white;
+}
+
+[data-scroll-container] {
+  perspective: 999999px !important;
+}
+
+input {
+  @apply bg-dark border border-gray-500 rounded outline-none px-3 py-2 focus:border-gray-700 focus:shadow-[0_0_0_4px_#027DFF80] transition duration-300;
+}
+
+#card-element {
+  border-radius: 0.5rem;
+  padding: 12px;
+  border: 1px solid;
+  border-color: white;
+  max-height: 44px;
+  width: 100%;
+  background: black;
+  box-sizing: border-box;
+  color: white;
+}
+
+#payment-request-button{
+  margin-bottom: 32px;
+}
